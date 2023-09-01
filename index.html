@@ -13,15 +13,16 @@
 
         <header class="text-gray-600 body-font ">
             <div
-                class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border-b-2 mb-8">
+                class="container mx-auto flex px-3 py-8 items-center md:flex-row justify-around border-b-2 mb-8">
                 <a
                     class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                    <img src="./images/Logo.png" alt>
+                    <img src="./images/Logo.png" class="w-44">
                 </a>
-                <nav
-                    class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <div class="flex flex-1 lg:gap-40 flex-col w-1/2 md:flex-row gap-6 lg:w-4/5 lg:justify-around ">
+                    <nav
+                    class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base md:justify-center">
                     <button
-                        class="btn btn-xs sm:btn-sm md:btn-md lg:btn font-bold text-gray-600" onclick="handleSortByView()">Sort
+                        class="btn sm:btn-sm md:btn-md font-bold text-gray-700" id="sort-btn" onclick="handleSortByView()">Sort
                         By View</button>
                 </nav>
                 <button
@@ -34,6 +35,7 @@
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                 </button>
+                </div>
             </div>
         </header>
 
@@ -42,7 +44,7 @@
             <section>
                 <!-- Tab Container -->
                 <div
-                    class="container mx-auto gap-4 flex items-center justify-center" id="tab-container">
+                    class="w-3/4 lg:w-1/3 mx-auto gap-2 md:gap-4 flex items-center justify-center px-10" id="tab-container">
                     <!-- <button class="btn font-medium">All</button>
                     <button class="btn font-medium">Music</button>
                     <button class="btn font-medium">Comedy</button>
@@ -58,18 +60,22 @@
                 <div
                     class="container px-4 py-16 mx-auto sm:max-w-xl md:max-w-full md:px-24 lg:px-52 lg:py-20">
                     <div
-                        class="grid gap-5 lg:grid-cols-4 sm:max-w-sm sm:mx-auto lg:max-w-full"
+                        class="grid gap-5 lg:grid-cols-4 md:grid-cols-2 sm:max-w-sm sm:mx-auto md:max-w-full"
                         id="vdo-container">
                         <!-- <div class="overflow-hidden bg-white rounded">
-                            <a href="/" aria-label="Article"><img
-                                    src="https://images.pexels.com/photos/1576937/pexels-photo-1576937.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
-                                    class="object-cover w-full h-48 rounded relative"
-                                    alt /></a>
+                            <div class="flex flex-col justify-end">
+                                <a href="/" aria-label="Article">
+                                <img src="${vdo.thumbnail}"
+                                class="object-cover w-full h-48 rounded relative"
+                                alt /></a>
                             <div class="py-5">
-                                <p
-                                    class="-mt-12 ml-60 mb-10 text-xs font-semibold text-white bg-black w-28 py-1 px-2 rounded-lg absolute">
-                                    3hrs 50 mins ago
-                                </p>
+                                ${vdo.others && vdo.others.posted_date ? `
+                                <p class="-mt-14 mb-10 text-end text-xs font-semibold text-white bg-black max-w-36 py-1 px-2 rounded-lg absolute">
+                                    ${timeCalculation(vdo.others.posted_date)}
+                                </p>` : ''
+                                }
+                            </div>
+                            </div>
 
                                 <div
                                     class="flex justify-between items-start gap-3">
@@ -100,8 +106,8 @@
                                 </div>
 
                                 <p class="text-gray-700 ml-16">91K views</p>
-                            </div>
-                        </div> -->
+                            </div> -->
+                        </div>
                     </div>
                 </div>
 

@@ -1,15 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Page</title>
 
-    link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
             rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
-</body>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header class="text-gray-600 body-font ">
+            <div
+                class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center border-b-2 mb-8 justify-center">
+                <a href="index.html"
+                    class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 justify-center">
+                    <img src="./images/Logo.png" class="w-48">
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                  <div>
+                    <p class="inline-block px-3 py-px mb-4 text-sm text-center font-semibold tracking-wider text-red-500 uppercase rounded-full bg-teal-accent-400">
+                      JavaScript Blog
+                    </p>
+                  </div>
+                  <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+                    <span class="relative inline-block">
+                     
+                      <span class="relative">The</span>
+                    </span>
+                    <span class="text-red-600 lowercase">Var</span>, <span class="text-red-600 lowercase">Let</span>, and <span class="text-red-600 lowercase">Const</span> – What's the Difference? 
+                  </h2>
+                  <p class="text-base text-gray-700 md:text-lg lg:text-center text-justify">
+                    One of the features that came with ES6 is the addition of let and const, which can be used for variable declaration. The question is, what makes them different from good ol' var which we've been using? If you are still not clear about this, then this article is for you.
+                  </p>
+                </div>
+                <div class="grid max-w-sm gap-5 mb-8 lg:grid-cols-3 sm:mx-auto lg:max-w-full">
+                  <div class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
+                    <p class="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
+                      20 Aug 2023
+                    </p>
+                    <a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400" aria-label="Read article" title="Nori grape silver beet broccoli kombu beet">
+                        Scope of var
+                    </a>
+                    <p class="max-w-xs mx-auto mb-2 text-gray-700">
+                        JavaScript's `var` declares function-scoped variables, accessible within the entire function, but not block-scoped, potentially causing unexpected behavior. Favor `let` and `const` for block-level scoping.
+                    </p>
+                    <a aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">2 min read</a>
+                  </div>
+                  <div class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
+                    <p class="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
+                      30 Nov 2023
+                    </p>
+                    <a
+                      href="/"
+                      class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      aria-label="Read article"
+                      title="Well, the way they make shows is, they make one"
+                    >
+                      Scope of let
+                    </a>
+                    <p class="max-w-xs mx-auto mb-2 text-gray-700">
+                        In JavaScript, the `let` keyword declares variables with block-level scope, confining their accessibility to the nearest enclosing block or statement, enhancing code predictability and reducing variable conflicts.
+                    </p>
+                    <a aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">4 min read</a>
+                  </div>
+                  <div class="px-10 py-20 text-center border rounded lg:px-5 lg:py-10 xl:py-20">
+                    <p class="mb-2 text-xs font-semibold tracking-wide text-gray-600 uppercase">
+                      12 Sep 2023
+                    </p>
+                    <a class="inline-block max-w-xs mx-auto mb-3 text-2xl font-extrabold leading-7 transition-colors duration-200 hover:text-deep-purple-accent-400" aria-label="Read article" title="Pommy ipsum smeg head whizz morris himer due">
+                      Scope of const
+                    </a>
+                    <p class="max-w-xs mx-auto mb-2 text-gray-700">
+                        In JavaScript, the `const` keyword declares variables with block-level scope like `let`, but it also ensures that the variable's value remains constant once assigned, preventing reassignment for immutability in the block.
+                    </p>
+                    <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">6 min read</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div class="grid gap-5 row-gap-10 lg:grid-cols-2">
+                  <div class="flex flex-col justify-center">
+                    <div class="max-w-xl mb-6">
+                      <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                        Use Case of<br class="hidden md:block" />
+                        <span class="font-bold text-red-600">"null"</span>and
+                        <span class="relative px-1">
+                          <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400"></div>
+                          <span class="relative inline-block text-deep-purple-accent-400 font-bold text-red-600">"undefined"</span>
+                        </span>
+                      </h2>
+                      <p class="text-base text-gray-700 md:text-lg">
+                        <span class="text-red-600 font-bold">null</span> and <span class="text-red-600 font-bold">undefined</span> are two distinct values in JavaScript, each with specific use cases:
+                      </p>
+                    </div>
+                    <p class="mb-4 text-sm font-bold tracking-widest uppercase">Difference</p>
+                    <div class="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0">
+                      <ul class="space-y-3">
+                        <li class="flex">
+                          <span class="mr-1">
+                            <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                              <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                            </svg>
+                          </span>
+                          'null' signifies intentional absence or emptiness
+                        </li>
+                        <li class="flex">
+                          <span class="mr-1">
+                            <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                              <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                            </svg>
+                          </span>
+                          Assigned 'null' to signal absence
+                        </li>
+                        <li class="flex">
+                          <span class="mr-1">
+                            <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                              <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                            </svg>
+                          </span>
+                          Resetting properties with intentional emptiness
+                        </li>
+                      </ul>
+                      <ul class="space-y-3">
+                        <li class="flex">
+                          <span class="mr-1">
+                            <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                              <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                            </svg>
+                          </span>
+                          Unassigned variable or object property
+                        </li>
+                        <li class="flex">
+                          <span class="mr-1">
+                            <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                              <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                            </svg>
+                          </span>
+                          Accessing non-existent properties or omitted parameters
+                        </li>
+                        <li class="flex">
+                          <span class="mr-1">
+                            <svg class="w-5 h-5 mt-px text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+                              <polygon stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+                            </svg>
+                          </span>
+                          Indicates missing or unintentional assignments
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96" src="https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" />
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+                <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+                  <div>
+                    <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-900 uppercase rounded-full bg-gray-400">
+                    </p>
+                  </div>
+                  <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">What does it mean by <span class="font-bold text-red-600">Rest API</span>
+                  </h2>
+                  <p class="text-base text-gray-700 md:text-lg">
+                    REST API (Representational State Transfer Application Programming Interface) is a set of architectural principles and constraints for designing networked applications. It is a widely used approach for building web services that allow different software systems to communicate with each other over the internet. Key principles of REST include:
+                  </p>
+                </div>
+                <div class="grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3">
+                  <div class="p-5 duration-300 transform bg-white border-2 border-dashed rounded shadow-sm border-red-400 hover:-translate-y-2">
+                    <div class="flex items-center mb-2">
+                      <p class="flex items-center justify-center w-10 h-10 mr-2 text-lg font-bold text-white rounded-full bg-red-500">
+                        1
+                      </p>
+                      <p class="text-lg font-bold leading-5">Resources:</p>
+                    </div>
+                    <p class="text-sm text-gray-900">
+                        Everything is treated as a resource, and these resources are uniquely identified using URIs
+                    </p>
+                  </div>
+                  <div class="p-5 duration-300 transform bg-white border-2 border-dashed rounded shadow-sm border-red-400 hover:-translate-y-2">
+                    <div class="flex items-center mb-2">
+                      <p class="flex items-center justify-center w-10 h-10 mr-2 text-lg font-bold text-white rounded-full bg-red-500">
+                        2
+                      </p>
+                      <p class="text-lg font-bold leading-5">Representation:</p>
+                    </div>
+                    <p class="text-sm text-gray-900">
+                        Resources can have multiple representations, such as JSON or XML, which clients can request based on their needs.
+                    </p>
+                  </div>
+                  <div class="relative p-5 duration-300 transform bg-white border-2 rounded shadow-sm border-red-400 hover:-translate-y-2">
+                    <div class="flex items-center mb-2">
+                      <p class="flex items-center justify-center w-10 h-10 mr-2 text-lg font-bold text-white rounded-full bg-red-500">
+                        3
+                      </p>
+                      <p class="text-lg font-bold leading-5">HTTP Methods:</p>
+                    </div>
+                    <p class="text-sm text-gray-900">
+                        It use standard HTTP methods like GET, POST, PUT, and DELETE to perform actions on resources.
+                    </p>
+                    <p class="absolute top-0 right-0 flex items-center justify-center w-8 h-8 -mt-4 -mr-4 font-bold rounded-full bg-red-400 sm:-mt-5 sm:-mr-5 sm:w-10 sm:h-10">
+                      <svg class="text-white w-7" stroke="currentColor" viewBox="0 0 24 24">
+                        <polyline fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="6,12 10,16 18,8"></polyline>
+                      </svg>
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </main>
+    </body>
 </html>
