@@ -86,7 +86,7 @@ const showVdoPage = (info) => {
             div.innerHTML = `
             <div class="overflow-hidden bg-white rounded">
                     <img src="${vdo.thumbnail}"
-                    class="object-cover w-full lg:h-48 md:h-40 rounded"
+                    class="object-cover w-full h-52 lg:h-52 md:h-40 rounded"
                     alt />
                     <div class="py-3 relative">
                         ${vdo.others && vdo.others.posted_date ? `
