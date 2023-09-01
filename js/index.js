@@ -32,8 +32,6 @@ const handleTabButton = async (id) => {
 
     const data = await responsive.json();
 
-    console.log(data.data);
-
     showVdoPage(data.data);
 
     const sortButton = document.getElementById('sort-btn');
